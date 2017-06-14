@@ -25,4 +25,4 @@ const uiBody =  entry.Title + n +
                         '[* コメント]' + n + n +
                         '[NIME] [音楽] [楽器]'
 
-window.open('https://scrapbox.io/UIPedia/' + entry.Title + '?body=' + encodeURI(uiBody))
+location.href = 'https://scrapbox.io/UIPedia/' + entry.Title + '?body=' + encodeURI(uiBody)
