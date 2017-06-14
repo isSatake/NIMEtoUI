@@ -1,8 +1,7 @@
 const tex = decodeURI(location.search.substring(1))
-console.log(tex)
 const entry = bibtexParse.toJSON(tex)[0].entryTags
 let authors = ''
-console.log(entry.Author)
+
 entry.Author.split(' and ').map((str) => {
   const link = ' [' + str + ']\n'
   authors += link
