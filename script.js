@@ -8,20 +8,19 @@ entry.Author.split(' and ').map((str) => {
 })
 
 const n = '\n'
-const uiBody =  entry.Title + n +
-                        '[* タイトル]' + n +
-                        ' [' + entry.Title + ' ' + entry.Url + ']' + n +
-                        '[* 著者]' + n +
-                        authors +
-                        '[* ソース]' + n +
-                        ' ' + entry.Booktitle + n +
-                        '[* ページ]' + n +
-                        ' ' + entry.Pages + n +
-                        '[* 年]' + n +
-                        ' ' + entry.Year + n +
-                        '[* 概要]' + n +
-                        ' ' + entry.Abstract + n +
-                        '[* コメント]' + n + n +
-                        '[NIME] [音楽] [楽器]'
+const uiBody =  '[* タイトル]' + n +
+                ' [' + entry.Title + ' ' + entry.Url + ']' + n +
+                '[* 著者]' + n +
+                authors +
+                '[* ソース]' + n +
+                ' ' + entry.Booktitle + n +
+                '[* ページ]' + n +
+                ' ' + entry.Pages + n +
+                '[* 年]' + n +
+                ' ' + entry.Year + n +
+                '[* 概要]' + n +
+                ' ' + entry.Abstract + n +
+                '[* コメント]' + n + n +
+                '[NIME] [音楽] [楽器]'
 
 location.href = 'https://scrapbox.io/UIPedia/' + entry.Title + '?body=' + encodeURI(uiBody)
